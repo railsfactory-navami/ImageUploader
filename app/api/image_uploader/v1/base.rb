@@ -5,7 +5,6 @@ module ImageUploader
     class Base < Grape::API
       version 'v1', using: :path
 
-      # Tickets Modules
       mount ImageUploader::V1::Home::Uploads
 
       add_swagger_documentation(
